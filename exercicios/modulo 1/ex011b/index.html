@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens tratadas</title>
+</head>
+<body>
+    <h1>trabalhando com imagens</h1>
+    <p>tente abrir o site em varios dispositivos diferentes</p>
+    <picture> 
+        <!--nesse exercicio e interessante comecar com a tag picture e dentro dela coloca a imagem maior ,e as imagens menores coloca com a tag source media type  e em vex de min colocar maximo-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">        
+        <!--o certo seria 1000 so que tem q somar a barra de rolagem-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    
+</body>
+</html>

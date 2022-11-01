@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*Importante simbolos na css:
+        .class
+        # id
+        : pseudo class
+        :: pseudo element
+        > children
+        */
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: brown;
+            text-decoration: none; /*tirando o sublinhado do link*/
+        }
+        a:visited{
+            color: blue; /*pseudo class,caso o site tenha sido visitado ele ficara azul*/
+        }
+        a:hover{
+            text-decoration: underline; /*quando passar o mouse ele sublinha*/
+            color: black;
+        }
+        a:active{
+            color: yellow; /*quando ele e clicado ele fica amarelo*/
+        }
+        a::after{
+            content: ' [link]'; /*colocando um link depois dos a ,mais posso adicionar qualquer simbolo,after*/
+            text-decoration: none; /*pra nao ficar em negrito*/
+            font-weight: normal;
+            color: darkgrey;
+
+        }
+    </style
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <a href="https://www.youtube.com/watch?v=qaR7j5NwA7s" target="_blank"><li>curiosidades</li></a>
+        <a href="https://www.youtube.com/watch?v=5Fqk3VaZWWg&list=RD5Fqk3VaZWWg&start_radio=1" target="_blank"><li>meus videos</li></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><li>linkedin</li></a>
+    </ul>
+    
+</body>
+</html>

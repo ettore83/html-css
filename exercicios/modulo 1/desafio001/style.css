@@ -1,0 +1,26 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+#titulo{
+    color: antiquewhite;
+}
+.body0{
+    background-color: black;
+      
+}
+.escrito{
+    color: rgb(15, 75, 47);
+}
+.principal1{
+    width: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: center;
+
+}

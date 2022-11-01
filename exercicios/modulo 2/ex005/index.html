@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+</head>
+<style>
+body{background-color: aqua;
+    
+}
+div{
+    display: inline-block;
+    background-color: brown;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;/*altura de cada div*/
+    width: 200px;/*largura de cada div*/
+
+}
+#d3 > p {
+    display: none;
+}
+/*hover pseudo class ,se colocar '>' p ,mostra q o paragrafo e filho da div,para esconder eu usei display none acima,o efeito e assim q passar o maouse ele aparece*/
+#d3:hover > p {
+    display: block;
+    color: antiquewhite;
+    background-color: blue;
+}
+
+div:hover{
+    background-color: yellow;
+}
+
+</style>
+<body>
+    <h1>estudando pseudo class</h1>
+    <div id="d1">div 01</div>
+    <div id="d2">div 02</div>
+    <div id="d3">div3 <p>Texto escondido</p>
+    </div>
+</body>
+</html>

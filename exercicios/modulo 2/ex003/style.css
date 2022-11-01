@@ -1,0 +1,26 @@
+*{
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+body{
+    background-image: linear-gradient(to right,#F25C05,#BF6E50);
+}
+main {
+    background-color: antiquewhite; /*tirando o conteudo do degrade,por isso foi colocado no main */
+    border-radius: 10px; /*da uma chanfrada no quadrado*/
+    box-shadow:10px 10px 10px rgba(36, 31, 21, 0.58) ; /*1 par, qnto q a sombra vai pro lado,2 par qnto q a sombra vai pra baixo,o 3 par,qnto que fica borrado,o terceiro e cor*/
+    width: 600px; /*largura do conteudo, para o escrito nao ir ate o final da tela*/
+    padding: 10px; /*distancia de 10 px para todas as margens do conteudo */
+    margin: auto; /*centraliza o conteudo main,independente o tamanho da tela */   
+}
+h1{
+    color:#403625 ;
+    text-align: center; /*deixando o h1 no centro*/
+    text-shadow:1px 1px 2px black ; /*consegue fazer sombra tambem no texto */
+}
+h2{
+    color: #733122;
+}
+p{
+    text-align: justify;
+}
