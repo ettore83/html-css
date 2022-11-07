@@ -9,6 +9,7 @@
 <style>
     body{
         height: 100vh;
+        /*
         background-color: black;
         background-image: url('imagens/wallpaper002.jpg');
         background-position: center center;
@@ -16,13 +17,20 @@
         /*it is not a good idea becouse the image become distorted
         background-size: 100% 100%; 
         there is background-size:contain*/
-        background-size: cover;/*the best solution */
+        /*background-size: cover;the best solution */
+        /*background-attachment: fixed;caso o conteudo saia do fundo da imagem e vai pro fundo preto,isso vai fazer com que se ajuste para nao sair da imagem*/
+    
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+        background-size: cover;
+
+        
+        /*para fazer a shorthand acima o size cover nao funciona,precisa por separado*/
 
 
     }
     main{
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border: 1px solid darkblue;
@@ -35,7 +43,7 @@
 <body>
     <main>
         <h1>Test background image</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt, maxime quos expedita et cupiditate? Dolore velit, illum vel obcaecati earum impedit beatae cum inventore cupiditate neque repudiandae voluptatum reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, facere. Obcaecati, voluptate, assumenda ullam esse sapiente eius dolore quidem, reiciendis eligendi iusto quis repudiandae numquam. Quod, aspernatur. Eius, eveniet totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum, maxime vitae fugit rerum voluptate deleniti eveniet saepe voluptatibus illo beatae soluta aspernatur quas, perferendis eos magni ex, ipsam quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deserunt, maxime quos expedita et cupiditate? Dolore velit, illum vel obcaecati earum impedit beatae cum inventore cupiditate neque repudiandae voluptatum reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, facere. Obcaecati, voluptate, assumenda ullam esse sapiente eius dolore quidem, reiciendis eligendi iusto quis repudiandae numquam. Quod, aspernatur. Eius, eveniet totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum, maxime vitae fugit rerum voluptate deleniti eveniet saepe voluptatibus illo beatae soluta aspernatur quas, perferendis eos magni ex, ipsam quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, saepe debitis ab praesentium at assumenda officia, odit temporibus illo maiores ipsum adipisci inventore sequi. Maxime ad illo voluptatum perspiciatis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates ratione aspernatur laboriosam similique itaque sunt culpa ipsa provident repudiandae natus, dolore voluptatum animi! Expedita optio repellendus quam fugit dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cupiditate omnis ratione eaque laudantium repellat dolores ducimus, quos odio impedit perspiciatis magnam temporibus facilis? At quisquam repudiandae saepe voluptatem quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odit aspernatur sint fugit praesentium nam amet! Doloremque, id illo aspernatur quaerat modi veritatis optio maiores cum numquam dolorem dolor ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum, repellat reprehenderit quae possimus aut consectetur exercitationem fugiat alias, similique aliquid natus, nihil commodi amet! Doloribus quis magnam esse praesentium.</p>
     </main>
   
 </body>
