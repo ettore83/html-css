@@ -1,3 +1,55 @@
-body{
-    background-color: aqua;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{ /*feito para ganhar espaco para o efeito paralaxe,com 10% view height em cima e em baixo*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espacamento ente as frases*/
+    padding-left: 30px;
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.139);
+
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(202, 201, 201);
+    color: white;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
