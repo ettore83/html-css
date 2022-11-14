@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;  /*when we put border by default the cel are separeted ,this will be together*/
+}
+tr{
+    background-color: greenyellow;
+}
+td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+td.numero{
+    text-align: right;
+
+}
+td.dado{
+    background-color: aqua;
+}
