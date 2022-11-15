@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+</head>
+<style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        border-collapse: collapse;
+        
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
+
+    }
+    thead{
+        background-color: gray;
+        color: white;
+    }
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+    }
+    td,th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    td.number{
+        text-align: right;
+    }
+</style>
+<body>
+    <h1>Population</h1>
+    <table>
+        <caption>
+            The 10 countries most populous in the world
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Pais</th>
+                <th scope="col" style="width:150px ;">Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>China</td>
+                <td class="number">1 411 780 000</td>
+            </tr>
+            <tr>
+                <td>Índia</td>
+                <td class="number">1 326 155 000</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td class="number">331 449 281</td>
+            </tr>
+            <tr>
+                <td>Indonésia</td>
+                <td class="number">273 523 615</td>
+            </tr>
+            <tr>
+                <td>Paquistão</td>
+                <td class="number">220 892 340</td>
+            </tr>
+            <tr>
+                <td>Nigéria</td>
+                <td class="number">217 757 685</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td class="number">215 851 765</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="number">164 689 383</td>
+            </tr>
+            <tr>
+                <td>Rússia</td>
+                <td class="number">145 934 462</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td class="number">128 932 753</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total population</th>
+                <td class="number">0000000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+<footer>
+    <p>informations take it by <a href="https://pt.wikipedia.org/wiki/Lista_de_pa%C3%ADses_por_popula%C3%A7%C3%A3o" target="_blank">here</a></p>
+</footer>
+</html>
