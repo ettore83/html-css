@@ -19,6 +19,9 @@
             padding: 10px;
             text-align: center;    
             }
+            td.mescla{
+                background-color: aqua;
+            }
     </style>
 </head>
 <body>
@@ -26,23 +29,22 @@
     <table>
         <tr>
             <td>A</td>
-            <td>B</td>
-            <td>C</td>
-        </tr>
+            <td colspan="2" class="mescla">B</td>  <!-- mescla c a coluna do lado -->
+        </tr> 
         <tr>
             <td>D</td>
             <td>E</td>
-            <td>F</td>
+            <td rowspan="3" class="mescla">F</td> <!-- mescla com as linhas de baixo-->
         </tr>
         <tr>
             <td>G</td>
             <td>H</td>
-            <td>I</td>
+            
         </tr>
         <tr>
             <td>J</td>
             <td>L</td>
-            <td>M</td>
+            
         </tr>
     </table>
 </body>
